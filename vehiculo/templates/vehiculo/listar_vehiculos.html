@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Listado de Vehículos</h1>
+
+{% if vehiculos %}
+<ul>
+    {% for vehiculo in vehiculos %}
+    <li>
+        {{ vehiculo.marca }} {{ vehiculo.modelo }} - ${{ vehiculo.precio }}
+        {% if vehiculo.precio < 10000 %}
+            (Precio Bajo)
+        {% elif vehiculo.precio <= 30000 %}
+            (Precio Medio)
+        {% else %}
+            (Precio Alto)
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No hay vehículos disponibles.</p>
+{% endif %}
+{% endblock %}
