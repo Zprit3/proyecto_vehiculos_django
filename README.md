@@ -23,7 +23,7 @@ Este proyecto es una aplicación web desarrollada con el framework Django que pe
 1.  **Clonar el repositorio:**
 
     ```bash
-    git clone [[[https://github.com/tu-usuario/tu-repositorio.git](https://github.com/Zprit3/proyecto_vehiculos_django.git)]
+    git clone https://github.com/Zprit3/proyecto_vehiculos_django.git
     ```
 
 2.  **Crear un entorno virtual (recomendado):**
